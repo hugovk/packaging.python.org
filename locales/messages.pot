@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python Packaging User Guide \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-14 06:13+0000\n"
+"POT-Creation-Date: 2023-05-07 14:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -407,6 +407,7 @@ msgstr ""
 #: ../source/overview.rst:23
 #: ../source/specifications/core-metadata.rst:41
 #: ../source/specifications/direct-url.rst:14
+#: ../source/specifications/direct-url-data-structure.rst:17
 #: ../source/tutorials/installing-packages.rst:23
 msgid "Contents"
 msgstr ""
@@ -1305,7 +1306,7 @@ msgstr ""
 
 #: ../source/guides/analyzing-pypi-package-downloads.rst:78
 #: ../source/specifications/dependency-specifiers.rst:27
-#: ../source/specifications/direct-url.rst:244
+#: ../source/specifications/direct-url-data-structure.rst:236
 msgid "Examples"
 msgstr ""
 
@@ -1847,9 +1848,9 @@ msgid "The most relevant arguments are explained below. Most of the snippets giv
 msgstr ""
 
 #: ../source/guides/distributing-packages-using-setuptools.rst:167
-#: ../source/specifications/declaring-project-metadata.rst:33
-#: ../source/specifications/declaring-project-metadata.rst:55
-#: ../source/specifications/declaring-project-metadata.rst:65
+#: ../source/specifications/declaring-project-metadata.rst:35
+#: ../source/specifications/declaring-project-metadata.rst:57
+#: ../source/specifications/declaring-project-metadata.rst:67
 msgid "``name``"
 msgstr ""
 
@@ -1870,9 +1871,9 @@ msgid "Comparison of project names is case insensitive and treats arbitrarily-lo
 msgstr ""
 
 #: ../source/guides/distributing-packages-using-setuptools.rst:193
-#: ../source/specifications/declaring-project-metadata.rst:38
-#: ../source/specifications/declaring-project-metadata.rst:61
-#: ../source/specifications/declaring-project-metadata.rst:82
+#: ../source/specifications/declaring-project-metadata.rst:40
+#: ../source/specifications/declaring-project-metadata.rst:63
+#: ../source/specifications/declaring-project-metadata.rst:84
 msgid "``version``"
 msgstr ""
 
@@ -1893,8 +1894,8 @@ msgid "If the project code itself needs run-time access to the version, the simp
 msgstr ""
 
 #: ../source/guides/distributing-packages-using-setuptools.rst:217
-#: ../source/specifications/declaring-project-metadata.rst:48
-#: ../source/specifications/declaring-project-metadata.rst:98
+#: ../source/specifications/declaring-project-metadata.rst:50
+#: ../source/specifications/declaring-project-metadata.rst:100
 msgid "``description``"
 msgstr ""
 
@@ -1931,8 +1932,8 @@ msgid "Provide details about the author."
 msgstr ""
 
 #: ../source/guides/distributing-packages-using-setuptools.rst:270
-#: ../source/specifications/declaring-project-metadata.rst:53
-#: ../source/specifications/declaring-project-metadata.rst:172
+#: ../source/specifications/declaring-project-metadata.rst:55
+#: ../source/specifications/declaring-project-metadata.rst:174
 msgid "``license``"
 msgstr ""
 
@@ -1945,8 +1946,8 @@ msgid "The ``license`` argument is more typically used to indicate differences f
 msgstr ""
 
 #: ../source/guides/distributing-packages-using-setuptools.rst:290
-#: ../source/specifications/declaring-project-metadata.rst:46
-#: ../source/specifications/declaring-project-metadata.rst:262
+#: ../source/specifications/declaring-project-metadata.rst:48
+#: ../source/specifications/declaring-project-metadata.rst:264
 msgid "``classifiers``"
 msgstr ""
 
@@ -1963,8 +1964,8 @@ msgid "To prevent a package from being uploaded to PyPI, use the special ``'Priv
 msgstr ""
 
 #: ../source/guides/distributing-packages-using-setuptools.rst:334
-#: ../source/specifications/declaring-project-metadata.rst:52
-#: ../source/specifications/declaring-project-metadata.rst:248
+#: ../source/specifications/declaring-project-metadata.rst:54
+#: ../source/specifications/declaring-project-metadata.rst:250
 msgid "``keywords``"
 msgstr ""
 
@@ -2069,7 +2070,7 @@ msgid "When installing packages as egg, ``data_files`` is not supported. So, if 
 msgstr ""
 
 #: ../source/guides/distributing-packages-using-setuptools.rst:498
-#: ../source/specifications/declaring-project-metadata.rst:59
+#: ../source/specifications/declaring-project-metadata.rst:61
 msgid "``scripts``"
 msgstr ""
 
@@ -2871,27 +2872,27 @@ msgstr ""
 msgid "For example:"
 msgstr ""
 
-#: ../source/guides/installing-stand-alone-command-line-tools.rst:72
+#: ../source/guides/installing-stand-alone-command-line-tools.rst:74
 msgid "To see a list of packages installed with pipx and which applications are available, use ``pipx list``:"
 msgstr ""
 
-#: ../source/guides/installing-stand-alone-command-line-tools.rst:93
+#: ../source/guides/installing-stand-alone-command-line-tools.rst:95
 msgid "To upgrade or uninstall a package:"
 msgstr ""
 
-#: ../source/guides/installing-stand-alone-command-line-tools.rst:100
+#: ../source/guides/installing-stand-alone-command-line-tools.rst:102
 msgid "pipx can be upgraded or uninstalled with pip:"
 msgstr ""
 
-#: ../source/guides/installing-stand-alone-command-line-tools.rst:116
+#: ../source/guides/installing-stand-alone-command-line-tools.rst:118
 msgid "pipx also allows you to install and run the latest version of an application in a temporary, ephemeral environment. For example:"
 msgstr ""
 
-#: ../source/guides/installing-stand-alone-command-line-tools.rst:123
+#: ../source/guides/installing-stand-alone-command-line-tools.rst:125
 msgid "To see the full list of commands pipx offers, run:"
 msgstr ""
 
-#: ../source/guides/installing-stand-alone-command-line-tools.rst:129
+#: ../source/guides/installing-stand-alone-command-line-tools.rst:131
 msgid "You can learn more about pipx at https://pypa.github.io/pipx/."
 msgstr ""
 
@@ -2968,7 +2969,7 @@ msgid "For Redhat, see here: https://developers.redhat.com/products/softwarecoll
 msgstr ""
 
 #: ../source/guides/installing-using-linux-tools.rst:93
-msgid "For CentOS, see here: https://www.softwarecollections.org/en/"
+msgid "For CentOS, see here: https://github.com/sclorg"
 msgstr ""
 
 #: ../source/guides/installing-using-linux-tools.rst:95
@@ -3945,106 +3946,106 @@ msgid "`GitHub Actions CI/CD`_ allows you to run a series of commands whenever a
 msgstr ""
 
 #: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:15
-msgid "This guide *assumes* that you already have a project that you know how to build distributions for and *it lives on GitHub*."
-msgstr ""
-
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:19
-msgid "Saving credentials on GitHub"
+msgid "This guide *assumes* that you already have a project that you know how to build distributions for and *it lives on GitHub*.  This guide also avoids details of building platform specific projects. If you have binary components, check out :ref:`cibuildwheel`'s GitHub Action examples."
 msgstr ""
 
 #: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:21
+msgid "Saving credentials on GitHub"
+msgstr ""
+
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:23
 msgid "In this guide, we'll demonstrate uploading to both PyPI and TestPyPI, meaning that we'll have two separate sets of credentials. And we'll need to save them in the GitHub repository settings."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:26
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:28
 msgid "Let's begin! 🚀"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:28
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:30
 msgid "Go to https://pypi.org/manage/account/#api-tokens and create a new `API token`_. If you have the project on PyPI already, limit the token scope to just that project. You can call it something like ``GitHub Actions CI/CD — project-org/project-repo`` in order for it to be easily distinguishable in the token list. **Don't close the page just yet — you won't see that token again.**"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:37
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:39
 msgid "In a separate browser tab or window, go to the ``Settings`` tab of your target repository and then click on `Secrets`_ in the left sidebar."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:40
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:42
 msgid "Create a new secret called ``PYPI_API_TOKEN`` and copy-paste the token from the first step."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:42
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:44
 msgid "Now, go to https://test.pypi.org/manage/account/#api-tokens and repeat the steps. Save that TestPyPI token on GitHub as ``TEST_PYPI_API_TOKEN``."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:48
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:50
 msgid "If you don't have a TestPyPI account, you'll need to create it. It's not the same as a regular PyPI account."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:53
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:55
 msgid "Creating a workflow definition"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:55
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:57
 msgid "GitHub CI/CD workflows are declared in YAML files stored in the ``.github/workflows/`` directory of your repository."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:58
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:60
 msgid "Let's create a ``.github/workflows/publish-to-test-pypi.yml`` file."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:61
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:63
 msgid "Start it with a meaningful name and define the event that should make GitHub run this workflow:"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:70
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:72
 msgid "Defining a workflow job environment"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:72
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:74
 msgid "Now, let's add initial setup for our job. It's a process that will execute commands that we'll define later. In this guide, we'll use the latest stable Ubuntu LTS version provided by GitHub Actions:"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:84
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:86
 msgid "Checking out the project and building distributions"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:86
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:88
 msgid "Then, add the following under the ``build-n-publish`` section:"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:93
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:95
 msgid "This will download your repository into the CI runner and then install and activate Python 3.10."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:96
-msgid "And now we can build dists from source. In this example, we'll use ``build`` package, assuming that your project has a ``pyproject.toml`` properly set up (see :pep:`517`/:pep:`518`)."
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:98
+msgid "And now we can build dists from source. In this example, we'll use ``build`` package."
 msgstr ""
 
 #: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:103
-msgid "You can use any other method for building distributions as long as it produces ready-to-upload artifacts saved into the ``dist/`` folder."
+msgid "You can use any other method for building distributions as long as it produces ready-to-upload artifacts saved into the ``dist/`` folder. You can even use ``actions/upload-artifact`` and ``actions/download-artifact`` to tranfer files between jobs or make them accessable for download from the web CI interface."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:107
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:109
 msgid "So add this to the steps list:"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:116
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:118
 msgid "Publishing the distribution to PyPI and TestPyPI"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:118
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:120
 msgid "Finally, add the following steps at the end:"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:124
-msgid "These two steps use the `pypa/gh-action-pypi-publish`_ GitHub Action: the first one uploads contents of the ``dist/`` folder into TestPyPI unconditionally and the second does that to PyPI, but only if the current commit is tagged."
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:126
+msgid "These two steps use the `pypa/gh-action-pypi-publish`_ GitHub Action: the first one uploads contents of the ``dist/`` folder into TestPyPI unconditionally and the second does that to PyPI, but only if the current commit is tagged. It is recommended you use the latest release tag; a tool like GitHub's dependabot can keep these updated regularly."
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:131
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:135
 msgid "That's all, folks!"
 msgstr ""
 
-#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:133
+#: ../source/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows.rst:137
 msgid "Now, whenever you push a tagged commit to your Git repository remote on GitHub, this workflow will publish it to PyPI. And it'll publish any push to TestPyPI which is useful for providing test builds to your alpha users as well as making sure that your release pipeline remains healthy!"
 msgstr ""
 
@@ -6016,7 +6017,7 @@ msgid "A Python file, provided it only relies on the standard library, can be re
 msgstr ""
 
 #: ../source/overview.rst:66
-msgid "This is great for sharing simple scripts and snippets between people who both have compatible Python versions (such as via email, StackOverflow, or GitHub gists). There are even some entire Python libraries that offer this as an option, such as `bottle.py <https://bottlepy.org/docs/dev/>`_ and :doc:`boltons <boltons:architecture>`."
+msgid "This is great for sharing simple scripts and snippets between people who both have compatible Python versions (such as via email, StackOverflow, or GitHub gists). There are even some entire Python libraries that offer this as an option, such as `bottle.py <https://pypi.org/project/bottle/>`_ and :doc:`boltons <boltons:architecture>`."
 msgstr ""
 
 #: ../source/overview.rst:73
@@ -6264,7 +6265,7 @@ msgid "Bringing your own Python executable"
 msgstr ""
 
 #: ../source/overview.rst:301
-msgid "Computing as we know it is defined by the ability to execute programs. Every operating system natively supports one or more formats of program they can natively execute."
+msgid "Computing as we know it is defined by the ability to execute programs. Every operating system natively supports one or more formats of programs they can natively execute."
 msgstr ""
 
 #: ../source/overview.rst:305
@@ -6352,7 +6353,7 @@ msgid "Most operating systems support some form of classical virtualization, run
 msgstr ""
 
 #: ../source/overview.rst:358
-msgid "These techniques are mostly reserved for larger scale deployments in data centers, though certain complex applications can benefit from this packaging. Technologies are Python agnostic, and include:"
+msgid "These techniques are mostly reserved for larger scale deployments in data centers, though certain complex applications can benefit from this packaging. The technologies are Python agnostic, and include:"
 msgstr ""
 
 #: ../source/overview.rst:362
@@ -7532,330 +7533,331 @@ msgstr ""
 #: ../source/specifications/declaring-project-metadata.rst:14
 #: ../source/specifications/dependency-specifiers.rst:24
 #: ../source/specifications/direct-url.rst:17
+#: ../source/specifications/direct-url-data-structure.rst:20
 msgid "Specification"
 msgstr ""
 
 #: ../source/specifications/declaring-project-metadata.rst:16
-msgid "There are two kinds of metadata: *static* and *dynamic*. Static metadata is specified in the ``pyproject.toml`` file directly and cannot be specified or changed by a tool. Dynamic metadata is listed via the ``dynamic`` key (defined later in this specification) and represents metadata that a tool will later provide."
+msgid "There are two kinds of metadata: *static* and *dynamic*. Static metadata is specified in the ``pyproject.toml`` file directly and cannot be specified or changed by a tool (this includes data *referred* to by the metadata, e.g. the contents of files referenced by the metadata). Dynamic metadata is listed via the ``dynamic`` key (defined later in this specification) and represents metadata that a tool will later provide."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:22
+#: ../source/specifications/declaring-project-metadata.rst:24
 msgid "The keys defined in this specification MUST be in a table named ``[project]`` in ``pyproject.toml``. No tools may add keys to this table which are not defined by this specification. For tools wishing to store their own settings in ``pyproject.toml``, they may use the ``[tool]`` table as defined in the :ref:`build dependency declaration specification <declaring-build-dependencies>`. The lack of a ``[project]`` table implicitly means the build back-end will dynamically provide all keys."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:31
+#: ../source/specifications/declaring-project-metadata.rst:33
 msgid "The only keys required to be statically defined are:"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:35
+#: ../source/specifications/declaring-project-metadata.rst:37
 msgid "The keys which are required but may be specified *either* statically or listed as dynamic are:"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:40
+#: ../source/specifications/declaring-project-metadata.rst:42
 msgid "All other keys are considered optional and may be specified statically, listed as dynamic, or left unspecified."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:43
+#: ../source/specifications/declaring-project-metadata.rst:45
 msgid "The complete list of keys allowed in the ``[project]`` table are:"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:45
+#: ../source/specifications/declaring-project-metadata.rst:47
 msgid "``authors``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:47
+#: ../source/specifications/declaring-project-metadata.rst:49
 msgid "``dependencies``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:49
-#: ../source/specifications/declaring-project-metadata.rst:380
+#: ../source/specifications/declaring-project-metadata.rst:51
+#: ../source/specifications/declaring-project-metadata.rst:382
 msgid "``dynamic``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:50
+#: ../source/specifications/declaring-project-metadata.rst:52
 msgid "``entry-points``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:51
+#: ../source/specifications/declaring-project-metadata.rst:53
 msgid "``gui-scripts``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:54
+#: ../source/specifications/declaring-project-metadata.rst:56
 msgid "``maintainers``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:56
+#: ../source/specifications/declaring-project-metadata.rst:58
 msgid "``optional-dependencies``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:57
-#: ../source/specifications/declaring-project-metadata.rst:112
+#: ../source/specifications/declaring-project-metadata.rst:59
+#: ../source/specifications/declaring-project-metadata.rst:114
 msgid "``readme``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:58
-#: ../source/specifications/declaring-project-metadata.rst:158
+#: ../source/specifications/declaring-project-metadata.rst:60
+#: ../source/specifications/declaring-project-metadata.rst:160
 msgid "``requires-python``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:60
-#: ../source/specifications/declaring-project-metadata.rst:278
+#: ../source/specifications/declaring-project-metadata.rst:62
+#: ../source/specifications/declaring-project-metadata.rst:280
 msgid "``urls``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:67
-#: ../source/specifications/declaring-project-metadata.rst:84
-#: ../source/specifications/declaring-project-metadata.rst:100
-#: ../source/specifications/declaring-project-metadata.rst:160
+#: ../source/specifications/declaring-project-metadata.rst:69
+#: ../source/specifications/declaring-project-metadata.rst:86
+#: ../source/specifications/declaring-project-metadata.rst:102
+#: ../source/specifications/declaring-project-metadata.rst:162
 msgid "TOML_ type: string"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:68
+#: ../source/specifications/declaring-project-metadata.rst:70
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Name <core-metadata-name>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:71
+#: ../source/specifications/declaring-project-metadata.rst:73
 msgid "The name of the project."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:73
+#: ../source/specifications/declaring-project-metadata.rst:75
 msgid "Tools SHOULD :ref:`normalize <name-normalization>` this name, as soon as it is read for internal consistency."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:85
+#: ../source/specifications/declaring-project-metadata.rst:87
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Version <core-metadata-version>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:88
+#: ../source/specifications/declaring-project-metadata.rst:90
 msgid "The version of the project as supported by :pep:`440`."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:90
+#: ../source/specifications/declaring-project-metadata.rst:92
 msgid "Users SHOULD prefer to specify already-normalized versions."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:101
+#: ../source/specifications/declaring-project-metadata.rst:103
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Summary <core-metadata-summary>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:104
+#: ../source/specifications/declaring-project-metadata.rst:106
 msgid "The summary description of the project."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:114
+#: ../source/specifications/declaring-project-metadata.rst:116
 msgid "TOML_ type: string or table"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:115
+#: ../source/specifications/declaring-project-metadata.rst:117
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Description <core-metadata-description>` and :ref:`Description-Content-Type <core-metadata-description-content-type>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:119
+#: ../source/specifications/declaring-project-metadata.rst:121
 msgid "The full description of the project (i.e. the README)."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:121
+#: ../source/specifications/declaring-project-metadata.rst:123
 msgid "The key accepts either a string or a table. If it is a string then it is a path relative to ``pyproject.toml`` to a text file containing the full description. Tools MUST assume the file's encoding is UTF-8. If the file path ends in a case-insensitive ``.md`` suffix, then tools MUST assume the content-type is ``text/markdown``. If the file path ends in a case-insensitive ``.rst``, then tools MUST assume the content-type is ``text/x-rst``. If a tool recognizes more extensions than this PEP, they MAY infer the content-type for the user without specifying this key as ``dynamic``. For all unrecognized suffixes when a content-type is not provided, tools MUST raise an error."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:132
+#: ../source/specifications/declaring-project-metadata.rst:134
 msgid "The ``readme`` key may also take a table. The ``file`` key has a string value representing a path relative to ``pyproject.toml`` to a file containing the full description. The ``text`` key has a string value which is the full description. These keys are mutually-exclusive, thus tools MUST raise an error if the metadata specifies both keys."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:139
+#: ../source/specifications/declaring-project-metadata.rst:141
 msgid "A table specified in the ``readme`` key also has a ``content-type`` key which takes a string specifying the content-type of the full description. A tool MUST raise an error if the metadata does not specify this key in the table. If the metadata does not specify the ``charset`` parameter, then it is assumed to be UTF-8. Tools MAY support other encodings if they choose to. Tools MAY support alternative content-types which they can transform to a content-type as supported by the :ref:`core metadata <core-metadata>`. Otherwise tools MUST raise an error for unsupported content-types."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:161
+#: ../source/specifications/declaring-project-metadata.rst:163
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Requires-Python <core-metadata-requires-python>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:164
+#: ../source/specifications/declaring-project-metadata.rst:166
 msgid "The Python version requirements of the project."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:174
+#: ../source/specifications/declaring-project-metadata.rst:176
 msgid "TOML_ type: table"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:175
+#: ../source/specifications/declaring-project-metadata.rst:177
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`License <core-metadata-license>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:178
+#: ../source/specifications/declaring-project-metadata.rst:180
 msgid "The table may have one of two keys. The ``file`` key has a string value that is a file path relative to ``pyproject.toml`` to the file which contains the license for the project. Tools MUST assume the file's encoding is UTF-8. The ``text`` key has a string value which is the license of the project.  These keys are mutually exclusive, so a tool MUST raise an error if the metadata specifies both keys."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:193
+#: ../source/specifications/declaring-project-metadata.rst:195
 msgid "``authors``/``maintainers``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:195
+#: ../source/specifications/declaring-project-metadata.rst:197
 msgid "TOML_ type: Array of inline tables with string keys and values"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:196
+#: ../source/specifications/declaring-project-metadata.rst:198
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Author <core-metadata-author>`, :ref:`Author-email <core-metadata-author-email>`, :ref:`Maintainer <core-metadata-maintainer>`, and :ref:`Maintainer-email <core-metadata-maintainer-email>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:202
+#: ../source/specifications/declaring-project-metadata.rst:204
 msgid "The people or organizations considered to be the \"authors\" of the project. The exact meaning is open to interpretation — it may list the original or primary authors, current maintainers, or owners of the package."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:207
+#: ../source/specifications/declaring-project-metadata.rst:209
 msgid "The \"maintainers\" key is similar to \"authors\" in that its exact meaning is open to interpretation."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:210
+#: ../source/specifications/declaring-project-metadata.rst:212
 msgid "These keys accept an array of tables with 2 keys: ``name`` and ``email``. Both values must be strings. The ``name`` value MUST be a valid email name (i.e. whatever can be put as a name, before an email, in :rfc:`822`) and not contain commas. The ``email`` value MUST be a valid email address. Both keys are optional, but at least one of the keys must be specified in the table."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:217
+#: ../source/specifications/declaring-project-metadata.rst:219
 msgid "Using the data to fill in :ref:`core metadata <core-metadata>` is as follows:"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:220
+#: ../source/specifications/declaring-project-metadata.rst:222
 msgid "If only ``name`` is provided, the value goes in :ref:`Author <core-metadata-author>` or :ref:`Maintainer <core-metadata-maintainer>` as appropriate."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:223
+#: ../source/specifications/declaring-project-metadata.rst:225
 msgid "If only ``email`` is provided, the value goes in :ref:`Author-email <core-metadata-author-email>` or :ref:`Maintainer-email <core-metadata-maintainer-email>` as appropriate."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:227
+#: ../source/specifications/declaring-project-metadata.rst:229
 msgid "If both ``email`` and ``name`` are provided, the value goes in :ref:`Author-email <core-metadata-author-email>` or :ref:`Maintainer-email <core-metadata-maintainer-email>` as appropriate, with the format ``{name} <{email}>``."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:231
+#: ../source/specifications/declaring-project-metadata.rst:233
 msgid "Multiple values should be separated by commas."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:250
-#: ../source/specifications/declaring-project-metadata.rst:264
+#: ../source/specifications/declaring-project-metadata.rst:252
+#: ../source/specifications/declaring-project-metadata.rst:266
 msgid "TOML_ type: array of strings"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:251
+#: ../source/specifications/declaring-project-metadata.rst:253
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Keywords <core-metadata-keywords>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:254
+#: ../source/specifications/declaring-project-metadata.rst:256
 msgid "The keywords for the project."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:265
+#: ../source/specifications/declaring-project-metadata.rst:267
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Classifier <core-metadata-classifier>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:268
+#: ../source/specifications/declaring-project-metadata.rst:270
 msgid "Trove classifiers which apply to the project."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:280
+#: ../source/specifications/declaring-project-metadata.rst:282
 msgid "TOML_ type: table with keys and values of strings"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:281
+#: ../source/specifications/declaring-project-metadata.rst:283
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Project-URL <core-metadata-project-url>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:284
+#: ../source/specifications/declaring-project-metadata.rst:286
 msgid "A table of URLs where the key is the URL label and the value is the URL itself."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:296
+#: ../source/specifications/declaring-project-metadata.rst:298
 msgid "Entry points"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:298
+#: ../source/specifications/declaring-project-metadata.rst:300
 msgid "TOML_ type: table (``[project.scripts]``, ``[project.gui-scripts]``, and ``[project.entry-points]``)"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:300
+#: ../source/specifications/declaring-project-metadata.rst:302
 msgid ":ref:`Entry points specification <entry-points>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:302
+#: ../source/specifications/declaring-project-metadata.rst:304
 msgid "There are three tables related to entry points. The ``[project.scripts]`` table corresponds to the ``console_scripts`` group in the :ref:`entry points specification <entry-points>`. The key of the table is the name of the entry point and the value is the object reference."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:308
+#: ../source/specifications/declaring-project-metadata.rst:310
 msgid "The ``[project.gui-scripts]`` table corresponds to the ``gui_scripts`` group in the :ref:`entry points specification <entry-points>`. Its format is the same as ``[project.scripts]``."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:312
+#: ../source/specifications/declaring-project-metadata.rst:314
 msgid "The ``[project.entry-points]`` table is a collection of tables. Each sub-table's name is an entry point group. The key and value semantics are the same as ``[project.scripts]``. Users MUST NOT create nested sub-tables but instead keep the entry point groups to only one level deep."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:318
+#: ../source/specifications/declaring-project-metadata.rst:320
 msgid "Build back-ends MUST raise an error if the metadata defines a ``[project.entry-points.console_scripts]`` or ``[project.entry-points.gui_scripts]`` table, as they would be ambiguous in the face of ``[project.scripts]`` and ``[project.gui-scripts]``, respectively."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:337
+#: ../source/specifications/declaring-project-metadata.rst:339
 msgid "``dependencies``/``optional-dependencies``"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:339
+#: ../source/specifications/declaring-project-metadata.rst:341
 msgid "TOML_ type: Array of :pep:`508` strings (``dependencies``), and a table with values of arrays of :pep:`508` strings (``optional-dependencies``)"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:342
+#: ../source/specifications/declaring-project-metadata.rst:344
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Requires-Dist <core-metadata-requires-dist>` and :ref:`Provides-Extra <core-metadata-provides-extra>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:346
+#: ../source/specifications/declaring-project-metadata.rst:348
 msgid "The (optional) dependencies of the project."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:348
+#: ../source/specifications/declaring-project-metadata.rst:350
 msgid "For ``dependencies``, it is a key whose value is an array of strings. Each string represents a dependency of the project and MUST be formatted as a valid :pep:`508` string. Each string maps directly to a :ref:`Requires-Dist <core-metadata-requires-dist>` entry."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:353
+#: ../source/specifications/declaring-project-metadata.rst:355
 msgid "For ``optional-dependencies``, it is a table where each key specifies an extra and whose value is an array of strings. The strings of the arrays must be valid :pep:`508` strings. The keys MUST be valid values for :ref:`Provides-Extra <core-metadata-provides-extra>`. Each value in the array thus becomes a corresponding :ref:`Requires-Dist <core-metadata-requires-dist>` entry for the matching :ref:`Provides-Extra <core-metadata-provides-extra>` metadata."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:382
+#: ../source/specifications/declaring-project-metadata.rst:384
 msgid "TOML_ type: array of string"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:383
+#: ../source/specifications/declaring-project-metadata.rst:385
 msgid "Corresponding :ref:`core metadata <core-metadata>` field: :ref:`Dynamic <core-metadata-dynamic>`"
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:386
+#: ../source/specifications/declaring-project-metadata.rst:388
 msgid "Specifies which keys listed by this PEP were intentionally unspecified so another tool can/will provide such metadata dynamically. This clearly delineates which metadata is purposefully unspecified and expected to stay unspecified compared to being provided via tooling later on."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:392
+#: ../source/specifications/declaring-project-metadata.rst:394
 msgid "A build back-end MUST honour statically-specified metadata (which means the metadata did not list the key in ``dynamic``)."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:394
+#: ../source/specifications/declaring-project-metadata.rst:396
 msgid "A build back-end MUST raise an error if the metadata specifies ``name`` in ``dynamic``."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:396
+#: ../source/specifications/declaring-project-metadata.rst:398
 msgid "If the :ref:`core metadata <core-metadata>` specification lists a field as \"Required\", then the metadata MUST specify the key statically or list it in ``dynamic`` (build back-ends MUST raise an error otherwise, i.e. it should not be possible for a required key to not be listed somehow in the ``[project]`` table)."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:401
+#: ../source/specifications/declaring-project-metadata.rst:403
 msgid "If the :ref:`core metadata <core-metadata>` specification lists a field as \"Optional\", the metadata MAY list it in ``dynamic`` if the expectation is a build back-end will provide the data for the key later."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:405
+#: ../source/specifications/declaring-project-metadata.rst:407
 msgid "Build back-ends MUST raise an error if the metadata specifies a key statically as well as being listed in ``dynamic``."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:407
+#: ../source/specifications/declaring-project-metadata.rst:409
 msgid "If the metadata does not list a key in ``dynamic``, then a build back-end CANNOT fill in the requisite metadata on behalf of the user (i.e. ``dynamic`` is the only way to allow a tool to fill in metadata and the user must opt into the filling in)."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:411
+#: ../source/specifications/declaring-project-metadata.rst:413
 msgid "Build back-ends MUST raise an error if the metadata specifies a key in ``dynamic`` but the build back-end was unable to determine the data for it (omitting the data, if determined to be the accurate value, is acceptable)."
 msgstr ""
 
-#: ../source/specifications/declaring-project-metadata.rst:422
+#: ../source/specifications/declaring-project-metadata.rst:424
 msgid "Example"
 msgstr ""
 
@@ -8230,306 +8232,339 @@ msgid "This file MUST NOT be created when installing a distribution from an othe
 msgstr ""
 
 #: ../source/specifications/direct-url.rst:26
-msgid "This JSON file MUST be a dictionary, compliant with :rfc:`8259` and UTF-8 encoded."
+msgid "This JSON file MUST be a UTF-8 encoded, :rfc:`8259` compliant, serialization of the :doc:`direct-url-data-structure`."
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:28
-msgid "If present, it MUST contain at least two fields. The first one is ``url``, with type ``string``. Depending on what ``url`` refers to, the second field MUST be one of ``vcs_info`` (if ``url`` is a VCS reference), ``archive_info`` (if ``url`` is a source archives or a wheel), or ``dir_info`` (if ``url``  is a local directory). These info fields have a (possibly empty) subdictionary as value, with the possible keys defined below."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:35
-msgid "``url`` MUST be stripped of any sensitive authentication information, for security reasons."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:38
-msgid "The user:password section of the URL MAY however be composed of environment variables, matching the following regular expression::"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:44
-msgid "Additionally, the user:password section of the URL MAY be a well-known, non security sensitive string. A typical example is ``git`` in the case of an URL such as ``ssh://git@gitlab.com/user/repo``."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:48
-msgid "When ``url`` refers to a VCS repository, the ``vcs_info`` key MUST be present as a dictionary with the following keys:"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:51
-msgid "A ``vcs`` key (type ``string``) MUST be present, containing the name of the VCS (i.e. one of ``git``, ``hg``, ``bzr``, ``svn``). Other VCS's SHOULD be registered by writing a PEP to amend this specification. The ``url`` value MUST be compatible with the corresponding VCS, so an installer can hand it off without transformation to a checkout/download command of the VCS."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:57
-msgid "A ``requested_revision`` key (type ``string``) MAY be present naming a branch/tag/ref/commit/revision/etc (in a format compatible with the VCS) to install."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:60
-msgid "A ``commit_id`` key (type ``string``) MUST be present, containing the exact commit/revision number that was installed. If the VCS supports commit-hash based revision identifiers, such commit-hash MUST be used as ``commit_id`` in order to reference the immutable version of the source code that was installed."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:67
-msgid "When ``url`` refers to a source archive or a wheel, the ``archive_info`` key MUST be present as a dictionary with the following keys:"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:70
-msgid "A ``hashes`` key SHOULD be present as a dictionary mapping a hash name to a hex encoded digest of the file."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:73
-msgid "Multiple hashes can be included, and it is up to the consumer to decide what to do with multiple hashes (it may validate all of them or a subset of them, or nothing at all)."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:77
-msgid "These hash names SHOULD always be normalized to be lowercase."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:79
-msgid "Any hash algorithm available via ``hashlib`` (specifically any that can be passed to ``hashlib.new()`` and do not require additional parameters) can be used as a key for the hashes dictionary. At least one secure algorithm from ``hashlib.algorithms_guaranteed`` SHOULD always be included. At time of writing, ``sha256`` specifically is recommended."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:85
-msgid "A deprecated ``hash`` key (type ``string``) MAY be present for backwards compatibility purposes, with value ``<hash-algorithm>=<expected-hash>``."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:88
-msgid "Producers of the data structure SHOULD emit the ``hashes`` key whether one or multiple hashes are available. Producers SHOULD continue to emit the ``hash`` key in contexts where they did so before, so as to keep backwards compatibility for existing clients."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:92
-msgid "When both the ``hash`` and ``hashes`` keys are present, the hash represented in the ``hash`` key MUST also be present in the ``hashes`` dictionary, so consumers can consider the ``hashes`` key only if it is present, and fall back to ``hash`` otherwise."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:96
-msgid "When ``url`` refers to a local directory, the ``dir_info`` key MUST be present as a dictionary with the following key:"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:99
-msgid "``editable`` (type: ``boolean``): ``true`` if the distribution was installed in editable mode, ``false`` otherwise. If absent, default to ``false``."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:102
-msgid "When ``url`` refers to a local directory, it MUST have the ``file`` sheme and be compliant with :rfc:`8089`. In particular, the path component must be absolute. Symbolic links SHOULD be preserved when making relative paths absolute."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:109
+#: ../source/specifications/direct-url.rst:31
 msgid "When the requested URL has the file:// scheme and points to a local directory that happens to contain a VCS checkout, installers MUST NOT attempt to infer any VCS information and therefore MUST NOT output any VCS related information (such as ``vcs_info``) in :file:`direct_url.json`."
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:114
-msgid "A top-level ``subdirectory`` field MAY be present containing a directory path, relative to the root of the VCS repository, source archive or local directory, to specify where ``pyproject.toml`` or ``setup.py`` is located."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:120
+#: ../source/specifications/direct-url.rst:38
 msgid "As a general rule, installers should as much as possible preserve the information that was provided in the requested URL when generating :file:`direct_url.json`. For example user:password environment variables should be preserved and ``requested_revision`` should reflect the revision that was provided in the requested URL as faithfully as possible. This information is however *enriched* with more precise data, such as ``commit_id``."
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:128
-msgid "Registered VCS"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:130
-msgid "This section lists the registered VCS's; expanded, VCS-specific information on how to use the ``vcs``, ``requested_revision``, and other fields of ``vcs_info``; and in some cases additional VCS-specific fields. Tools MAY support other VCS's although it is RECOMMENDED to register them by writing a PEP to amend this specification. The ``vcs`` field SHOULD be the command name (lowercased). Additional fields that would be necessary to support such VCS SHOULD be prefixed with the VCS command name."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:140
-msgid "Git"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:142
-#: ../source/specifications/direct-url.rst:174
-#: ../source/specifications/direct-url.rst:197
-#: ../source/specifications/direct-url.rst:220
-msgid "Home page"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:144
-msgid "https://git-scm.com/"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:146
-#: ../source/specifications/direct-url.rst:178
-#: ../source/specifications/direct-url.rst:201
-#: ../source/specifications/direct-url.rst:224
-msgid "vcs command"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:148
-#: ../source/specifications/direct-url.rst:152
-msgid "git"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:150
-#: ../source/specifications/direct-url.rst:182
-#: ../source/specifications/direct-url.rst:205
-#: ../source/specifications/direct-url.rst:228
-msgid "``vcs`` field"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:154
-#: ../source/specifications/direct-url.rst:186
-#: ../source/specifications/direct-url.rst:209
-#: ../source/specifications/direct-url.rst:232
-msgid "``requested_revision`` field"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:156
-msgid "A tag name, branch name, Git ref, commit hash, shortened commit hash, or other commit-ish."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:159
-#: ../source/specifications/direct-url.rst:190
-#: ../source/specifications/direct-url.rst:213
-#: ../source/specifications/direct-url.rst:237
-msgid "``commit_id`` field"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:161
-msgid "A commit hash (40 hexadecimal characters sha1)."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:165
-msgid "Installers can use the ``git show-ref`` and ``git symbolic-ref`` commands to determine if the ``requested_revision`` corresponds to a Git ref. In turn, a ref beginning with ``refs/tags/`` corresponds to a tag, and a ref beginning with ``refs/remotes/origin/`` after cloning corresponds to a branch."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:172
-msgid "Mercurial"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:176
-msgid "https://www.mercurial-scm.org/"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:180
-#: ../source/specifications/direct-url.rst:184
-msgid "hg"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:188
-msgid "A tag name, branch name, changeset ID, shortened changeset ID."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:192
-msgid "A changeset ID (40 hexadecimal characters)."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:195
-msgid "Bazaar"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:199
-msgid "https://bazaar.canonical.com"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:203
-#: ../source/specifications/direct-url.rst:207
-msgid "bzr"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:211
-msgid "A tag name, branch name, revision id."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:215
-msgid "A revision id."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:218
-msgid "Subversion"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:222
-msgid "https://subversion.apache.org/"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:226
-#: ../source/specifications/direct-url.rst:230
-msgid "svn"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:234
-msgid "``requested_revision`` must be compatible with ``svn checkout`` ``--revision`` option. In Subversion, branch or tag is part of ``url``."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:239
-msgid "Since Subversion does not support globally unique identifiers, this field is the Subversion revision number in the corresponding repository."
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:247
-msgid "Example direct_url.json"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:249
-msgid "Source archive:"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:262
-msgid "Git URL with tag and commit-hash:"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:275
-msgid "Local directory:"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:284
-msgid "Local directory installed in editable mode:"
-msgstr ""
-
-#: ../source/specifications/direct-url.rst:297
+#: ../source/specifications/direct-url.rst:47
 msgid "Example pip commands and their effect on direct_url.json"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:299
+#: ../source/specifications/direct-url.rst:49
 msgid "Commands that generate a ``direct_url.json``:"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:301
+#: ../source/specifications/direct-url.rst:51
 msgid "``pip install https://example.com/app-1.0.tgz``"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:302
+#: ../source/specifications/direct-url.rst:52
 msgid "``pip install https://example.com/app-1.0.whl``"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:303
+#: ../source/specifications/direct-url.rst:53
 msgid "``pip install \"app @ git+https://example.com/repo/app.git#subdirectory=setup\"``"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:304
+#: ../source/specifications/direct-url.rst:54
 msgid "``pip install ./app``"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:305
+#: ../source/specifications/direct-url.rst:55
 msgid "``pip install file:///home/user/app``"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:306
+#: ../source/specifications/direct-url.rst:56
 msgid "``pip install --editable \"app @ git+https://example.com/repo/app.git#subdirectory=setup\"`` (in which case, ``url`` will be the local directory where the git repository has been cloned to, and ``dir_info`` will be present with ``\"editable\": true`` and no ``vcs_info`` will be set)"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:310
+#: ../source/specifications/direct-url.rst:60
 msgid "``pip install -e ./app``"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:312
+#: ../source/specifications/direct-url.rst:62
 msgid "Commands that *do not* generate a ``direct_url.json``"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:314
+#: ../source/specifications/direct-url.rst:64
 msgid "``pip install app``"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:315
+#: ../source/specifications/direct-url.rst:65
 msgid "``pip install app --no-index --find-links https://example.com/``"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:318
+#: ../source/specifications/direct-url.rst:68
+#: ../source/specifications/direct-url-data-structure.rst:285
 msgid "History"
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:320
+#: ../source/specifications/direct-url.rst:70
 msgid "March 2020: the ``direct_url.json`` metadata file was originally specified in :pep:`610` and is formally documented here."
 msgstr ""
 
-#: ../source/specifications/direct-url.rst:322
-msgid "January 2023: Added the ``archive_info.hashes`` key (`discussion <https://discuss.python.org/t/22299>`__)."
+#: ../source/specifications/direct-url-data-structure.rst:6
+msgid "Direct URL Data Structure"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:8
+msgid "This document specifies a JSON-serializable abstract data structure that can represent URLs to python projects and distribution artifacts such as VCS source trees, local source trees, source distributions and wheels."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:12
+msgid "The representation of the components of this data structure as a :rfc:`1738` URL is not formally specified at time of writing. A common representation is the pip URL format. Other examples are provided in :pep:`440`."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:22
+msgid "The Direct URL Data Structure MUST be a dictionary, serializable to JSON according to :rfc:`8259`."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:25
+msgid "It MUST contain at least two fields. The first one is ``url``, with type ``string``. Depending on what ``url`` refers to, the second field MUST be one of ``vcs_info`` (if ``url`` is a VCS reference), ``archive_info`` (if ``url`` is a source archives or a wheel), or ``dir_info`` (if ``url``  is a local directory). These info fields have a (possibly empty) subdictionary as value, with the possible keys defined below."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:32
+msgid "When persisted, ``url`` MUST be stripped of any sensitive authentication information, for security reasons."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:35
+msgid "The user:password section of the URL MAY however be composed of environment variables, matching the following regular expression::"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:41
+msgid "Additionally, the user:password section of the URL MAY be a well-known, non security sensitive string. A typical example is ``git`` in the case of an URL such as ``ssh://git@gitlab.com/user/repo``."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:46
+msgid "VCS URLs"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:48
+msgid "When ``url`` refers to a VCS repository, the ``vcs_info`` key MUST be present as a dictionary with the following keys:"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:51
+msgid "A ``vcs`` key (type ``string``) MUST be present, containing the name of the VCS (i.e. one of ``git``, ``hg``, ``bzr``, ``svn``). Other VCS's SHOULD be registered by writing a PEP to amend this specification. The ``url`` value MUST be compatible with the corresponding VCS, so an installer can hand it off without transformation to a checkout/download command of the VCS."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:57
+msgid "A ``requested_revision`` key (type ``string``) MAY be present naming a branch/tag/ref/commit/revision/etc (in a format compatible with the VCS)."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:59
+msgid "A ``commit_id`` key (type ``string``) MUST be present, containing the exact commit/revision number that was/is to be installed. If the VCS supports commit-hash based revision identifiers, such commit-hash MUST be used as ``commit_id`` in order to reference an immutable version of the source code."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:67
+msgid "Archive URLs"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:69
+msgid "When ``url`` refers to a source archive or a wheel, the ``archive_info`` key MUST be present as a dictionary with the following keys:"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:72
+msgid "A ``hashes`` key SHOULD be present as a dictionary mapping a hash name to a hex encoded digest of the file."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:75
+msgid "Multiple hashes can be included, and it is up to the consumer to decide what to do with multiple hashes (it may validate all of them or a subset of them, or nothing at all)."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:79
+msgid "These hash names SHOULD always be normalized to be lowercase."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:81
+msgid "Any hash algorithm available via ``hashlib`` (specifically any that can be passed to ``hashlib.new()`` and do not require additional parameters) can be used as a key for the hashes dictionary. At least one secure algorithm from ``hashlib.algorithms_guaranteed`` SHOULD always be included. At time of writing, ``sha256`` specifically is recommended."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:87
+msgid "A deprecated ``hash`` key (type ``string``) MAY be present for backwards compatibility purposes, with value ``<hash-algorithm>=<expected-hash>``."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:90
+msgid "Producers of the data structure SHOULD emit the ``hashes`` key whether one or multiple hashes are available. Producers SHOULD continue to emit the ``hash`` key in contexts where they did so before, so as to keep backwards compatibility for existing clients."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:94
+msgid "When both the ``hash`` and ``hashes`` keys are present, the hash represented in the ``hash`` key MUST also be present in the ``hashes`` dictionary, so consumers can consider the ``hashes`` key only if it is present, and fall back to ``hash`` otherwise."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:99
+msgid "Local directories"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:101
+msgid "When ``url`` refers to a local directory, the ``dir_info`` key MUST be present as a dictionary with the following key:"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:104
+msgid "``editable`` (type: ``boolean``): ``true`` if the distribution was/is to be installed in editable mode, ``false`` otherwise. If absent, default to ``false``."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:107
+msgid "When ``url`` refers to a local directory, it MUST have the ``file`` scheme and be compliant with :rfc:`8089`. In particular, the path component must be absolute. Symbolic links SHOULD be preserved when making relative paths absolute."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:113
+msgid "Projects in subdirectories"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:115
+msgid "A top-level ``subdirectory`` field MAY be present containing a directory path, relative to the root of the VCS repository, source archive or local directory, to specify where ``pyproject.toml`` or ``setup.py`` is located."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:120
+msgid "Registered VCS"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:122
+msgid "This section lists the registered VCS's; expanded, VCS-specific information on how to use the ``vcs``, ``requested_revision``, and other fields of ``vcs_info``; and in some cases additional VCS-specific fields. Tools MAY support other VCS's although it is RECOMMENDED to register them by writing a PEP to amend this specification. The ``vcs`` field SHOULD be the command name (lowercased). Additional fields that would be necessary to support such VCS SHOULD be prefixed with the VCS command name."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:132
+msgid "Git"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:134
+#: ../source/specifications/direct-url-data-structure.rst:166
+#: ../source/specifications/direct-url-data-structure.rst:189
+#: ../source/specifications/direct-url-data-structure.rst:212
+msgid "Home page"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:136
+msgid "https://git-scm.com/"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:138
+#: ../source/specifications/direct-url-data-structure.rst:170
+#: ../source/specifications/direct-url-data-structure.rst:193
+#: ../source/specifications/direct-url-data-structure.rst:216
+msgid "vcs command"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:140
+#: ../source/specifications/direct-url-data-structure.rst:144
+msgid "git"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:142
+#: ../source/specifications/direct-url-data-structure.rst:174
+#: ../source/specifications/direct-url-data-structure.rst:197
+#: ../source/specifications/direct-url-data-structure.rst:220
+msgid "``vcs`` field"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:146
+#: ../source/specifications/direct-url-data-structure.rst:178
+#: ../source/specifications/direct-url-data-structure.rst:201
+#: ../source/specifications/direct-url-data-structure.rst:224
+msgid "``requested_revision`` field"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:148
+msgid "A tag name, branch name, Git ref, commit hash, shortened commit hash, or other commit-ish."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:151
+#: ../source/specifications/direct-url-data-structure.rst:182
+#: ../source/specifications/direct-url-data-structure.rst:205
+#: ../source/specifications/direct-url-data-structure.rst:229
+msgid "``commit_id`` field"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:153
+msgid "A commit hash (40 hexadecimal characters sha1)."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:157
+msgid "Tools can use the ``git show-ref`` and ``git symbolic-ref`` commands to determine if the ``requested_revision`` corresponds to a Git ref. In turn, a ref beginning with ``refs/tags/`` corresponds to a tag, and a ref beginning with ``refs/remotes/origin/`` after cloning corresponds to a branch."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:164
+msgid "Mercurial"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:168
+msgid "https://www.mercurial-scm.org/"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:172
+#: ../source/specifications/direct-url-data-structure.rst:176
+msgid "hg"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:180
+msgid "A tag name, branch name, changeset ID, shortened changeset ID."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:184
+msgid "A changeset ID (40 hexadecimal characters)."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:187
+msgid "Bazaar"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:191
+msgid "https://bazaar.canonical.com"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:195
+#: ../source/specifications/direct-url-data-structure.rst:199
+msgid "bzr"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:203
+msgid "A tag name, branch name, revision id."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:207
+msgid "A revision id."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:210
+msgid "Subversion"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:214
+msgid "https://subversion.apache.org/"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:218
+#: ../source/specifications/direct-url-data-structure.rst:222
+msgid "svn"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:226
+msgid "``requested_revision`` must be compatible with ``svn checkout`` ``--revision`` option. In Subversion, branch or tag is part of ``url``."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:231
+msgid "Since Subversion does not support globally unique identifiers, this field is the Subversion revision number in the corresponding repository."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:238
+msgid "Source archive:"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:251
+msgid "Git URL with tag and commit-hash:"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:264
+msgid "Local directory:"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:273
+msgid "Local directory in editable mode:"
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:287
+msgid "March 2020: this data structure was originally specified as part of the ``direct_url.json`` metadata file in :pep:`610` and is formally documented here."
+msgstr ""
+
+#: ../source/specifications/direct-url-data-structure.rst:289
+msgid "January 2023: Added the ``archive_info.hashes`` key ([discussion](https://discuss.python.org/t/22299))."
 msgstr ""
 
 #: ../source/specifications/entry-points.rst:5
@@ -8657,7 +8692,7 @@ msgid "PyPA specifications"
 msgstr ""
 
 #: ../source/specifications/index.rst:6
-msgid "This is a list of currently active interoperability specifications maintained by the Python Packaging Authority. The process for updating these standards, and for proposing new ones, is documented on `pypa.io <https://www.pypa.io/en/latest/specifications/>`__."
+msgid "This is a list of currently active interoperability specifications maintained by the Python Packaging Authority. The process for updating these standards, and for proposing new ones, is documented on `pypa.io <https://www.pypa.io/en/latest/specifications.html>`__."
 msgstr ""
 
 #: ../source/specifications/index.rst:13
@@ -8668,11 +8703,11 @@ msgstr ""
 msgid "Package Installation Environment Metadata"
 msgstr ""
 
-#: ../source/specifications/index.rst:39
+#: ../source/specifications/index.rst:40
 msgid "Package Distribution File Formats"
 msgstr ""
 
-#: ../source/specifications/index.rst:49
+#: ../source/specifications/index.rst:50
 msgid "Package Index Interfaces"
 msgstr ""
 
