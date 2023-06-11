@@ -1,6 +1,7 @@
 name: Translation
 
 on:
+  push:
   workflow_run:
     workflows:
     - Test
