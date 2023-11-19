@@ -42,12 +42,11 @@ packages (commonly, the ``site-packages`` directory).
 
 This directory is named as ``{name}-{version}.dist-info``, with ``name`` and
 ``version`` fields corresponding to :ref:`core-metadata`. Both fields must be
-normalized (see :ref:`name-normalization` and
-:pep:`PEP 440 <440#normalization>` for the definition of normalization for
-each field respectively), and replace dash (``-``) characters with
-underscore (``_``) characters, so the ``.dist-info`` directory always has
-exactly one dash (``-``) character in its stem, separating the ``name`` and
-``version`` fields.
+normalized (see the :ref:`name normalization specification <name-normalization>`
+and the :ref:`version normalization specification <version-specifiers-normalization>`),
+and replace dash (``-``) characters with underscore (``_``) characters,
+so the ``.dist-info`` directory always has exactly one dash (``-``) character in
+its stem, separating the ``name`` and ``version`` fields.
 
 Historically, tools have failed to replace dot characters or normalize case in
 the ``name`` field, or not perform normalization in the ``version`` field.
@@ -59,14 +58,14 @@ encouraged to start normalizing those fields.
 
 .. note::
 
-    The ``.dist-info`` directory's name is formatted to unambigiously represent
+    The ``.dist-info`` directory's name is formatted to unambiguously represent
     a distribution as a filesystem path. Tools presenting a distribution name
     to a user should avoid using the normalized name, and instead present the
     specified name (when needed prior to resolution to an installed package),
     or read the respective fields in Core Metadata, since values listed there
     are unescaped and accurately reflect the distribution. Libraries should
     provide API for such tools to consume, so tools can have access to the
-    unnormalized name when displaying distrubution information.
+    unnormalized name when displaying distribution information.
 
 This ``.dist-info`` directory may contain the following files, described in
 detail below:
@@ -234,7 +233,7 @@ packages into a Python environment to ensure that other tools are not used to
 uninstall or otherwise modify that installed package, as doing so may cause
 compatibility problems with the wider environment.
 
-To achieve this, affected tools should take the folllowing steps:
+To achieve this, affected tools should take the following steps:
 
 * Rename or remove the ``RECORD`` file to prevent changes via other tools (e.g.
   appending a suffix to create a non-standard ``RECORD.tool`` file if the tool

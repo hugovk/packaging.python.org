@@ -92,8 +92,10 @@ decide how to best use the ABI tag.
 Platform Tag
 ------------
 
-The platform tag is simply ``distutils.util.get_platform()`` with all
+The platform tag is simply ``sysconfig.get_platform()`` with all
 hyphens ``-`` and periods ``.`` replaced with underscore ``_``.
+Until the removal of :ref:`distutils` in Python 3.12, this
+was ``distutils.util.get_platform()``.
 
 * win32
 * linux_i386
@@ -274,7 +276,7 @@ Why not use special character <X> rather than ``.`` or ``-``?
     in some contexts (for example, ``+`` must be quoted in URLs, ``~`` is
     used to denote the user's home directory in POSIX), or because the
     advantages weren't sufficiently compelling to justify changing the
-    existing reference implementation for the wheel format defined in :pep:427
+    existing reference implementation for the wheel format defined in :pep:`427`
     (for example, using ``,`` rather than ``.`` to separate components
     in a compressed tag).
 
